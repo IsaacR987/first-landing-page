@@ -1,17 +1,137 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    margin: 0px;
 }
+
+/* Header start */
 
 .header {
     display: flex;
+    background-color: #1F2937;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 450px;
 }
+
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    gap: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+/*END*/
+
+/* Main content start */
 
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+/* Section-One */
+
+.section-one {
+    background-color: #1F2937;
+    color: white;
+}
+
+.header-one {
+    width: 400px;
+    margin: 30px;
+}
+
+.section-one .one-pic{
+    width: 500px;
+    height: 200px;
+    padding: 50px 0px;
+}
+
+.section-one h1 {
+    font-size: 48px;
+    margin: 0px;
+}
+
+.section-one p {
+    margin: 0px;
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.section-one button {
+    background-color: #3882F6;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+}
+
+/* Section-Two */
+
+.section-two {
+    border: 2px solid salmon;
+}
+
+.info-container {
+    display: flex;
+}
+
+.sub-image {
+    height: 100px;
+    width: 100px;
+}
+
+/* Section-Three */
+
+.section-three {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-style: light italic;
+}
+
+.section-three .tagline {
+    font-size: 24px;
+}
+
+.section-four {
+    background-color: #3882F6;
+    color: white;
+}
+
+.section-four button {
+    background-color: #3882F6;
+    border-color: white;
+    color: white;
 }
 
 .footer {
     display: flex;
+    background-color: #1F2937;
+    color: white;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
