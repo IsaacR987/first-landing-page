@@ -19,7 +19,6 @@ body {
 
 .header ul {
     display: flex;
-    flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
     gap: 16px;
@@ -83,16 +82,34 @@ li {
 /* Section-Two */
 
 .section-two {
-    border: 2px solid salmon;
+    flex-direction: column;
 }
 
+.header-two {
+    align-self: center;
+}
 .info-container {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10px;
+    max-width: 140px;
+}
+
+.info p {
+    text-align: center;
 }
 
 .sub-image {
     height: 100px;
     width: 100px;
+    border-radius: 10px;
+    border: 3px solid #3882F6;
 }
 
 /* Section-Three */
@@ -102,25 +119,66 @@ li {
     color: #1F2937;
     font-size: 36px;
     font-style: light italic;
+    flex-direction: column;
 }
 
-.section-three .tagline {
+.content-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+}
+
+.content-three p {
+    margin-bottom: 0;
+}
+
+.tagline {
     font-size: 24px;
+    margin: 0 0 24px 0;
+    align-self: flex-end;
+    font-weight: bold;
 }
 
-.section-four {
+/* Section-Four */
+
+.content-four {
     background-color: #3882F6;
     color: white;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px 100px;
+    gap: 200px;
+    box-sizing: border-box;
 }
 
-.section-four button {
+.content-four h4 {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.content-four p {
+    margin-top: 0px;
+}
+
+
+.content-four button {
     background-color: #3882F6;
     border-color: white;
     color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 40px;
+    width: 125px;
+    align-self: center;
 }
+
+/* Footer Start */
 
 .footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #1F2937;
     color: white;
 }
@@ -131,7 +189,7 @@ li {
 .section-four {
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    min-height: 400px;
 }
